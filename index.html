@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<script scr="main.js"></script>
+	<meta charset="UTF-8">
+	<title>Text Redactor By Pavlo Pyrozhenko</title>
+</head>
+<body id="body">
+	<div class="textFeed">
+		<button class="characters" onclick="count()">
+			Count characters
+		</button>
+		<textarea class="text" type="text" id="text"></textarea>
+		<p id="charNo"></p>
+	</div>
+	<p id="p"></p>
+	<script>
+		function count() {
+			var text = document.getElementById('text').value;
+			document.getElementById('p').innerHTML = text;
+			document.getElementById('charNo').innerHTML = text.length;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+	font-family: 'Verdana';
+}
+.textFeed {
+	margin-top: 5%;
+	margin-left: 20%;
+	position: relative;
+	height: 30em;
+	max-width: 90%;
+	max-height: 100%;
+}
+#text {
+	position: absolute;
+	max-width: 60%;
+	min-width: 47%;
+	height: 50%;
+	max-height: 90%;
+	left: 5%;
+	top: 5%;
+}
+.characters {
+	background: grey;
+	position: absolute;
+	top: 0em;
+	left: 5%;
+}
+#charNo {
+	background: rgb(220, 222, 226);
+	display: block;
+	position: absolute;
+	left: 33%;
+	top: -2%;
+	width: auto;
+	font-size: 0.9em;
+}
+.text {
+	transition: 0.5s;
+}
+.text:focus {
+	background-color: rgb(220, 222, 226);
+}
+#charNo::before {
+	content: "Number of characters: ";
+	background: #fff;
+	font-weight: bold;
+}
