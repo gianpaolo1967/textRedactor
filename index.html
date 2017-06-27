@@ -11,6 +11,12 @@
 		<button class="characters" onclick="count()">
 			Count characters
 		</button>
+		<button class="uppercase" onclick="uppercase()">
+			Uppercase
+		</button>
+		<button class="lowercase" onclick="lowercase()">
+			Lowercase
+		</button>
 		<textarea class="text" type="text" id="text"></textarea>
 		<p id="charNo"></p>
 	</div>
@@ -21,6 +27,18 @@
 			document.getElementById('p').innerHTML = text;
 			document.getElementById('charNo').innerHTML = text.length;
 		}
+	</script>
+	<script>
+		function uppercase() {
+		var text = document.getElementById('text').value;
+		document.getElementById('p').innerHTML = text.toUpperCase();
+	}
+	</script>
+	<script>
+		function lowercase() {
+		var text = document.getElementById('text').value;
+		document.getElementById('p').innerHTML = text.toLowerCase();
+	}
 	</script>
 </body>
 </html>
